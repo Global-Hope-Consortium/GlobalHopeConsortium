@@ -1,65 +1,62 @@
 # Global Hope Consortium Website
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Setup Instructions](#setup-instructions)
-- [Features](#features)
-- [Contact Information](#contact-information)
+Global Hope Consortium is a multi-service platform offering Software Development, Accounting Consultancy, Transport Services, and Electronics Resell. This project is being developed using modern technologies, with an emphasis on custom code over plugins to master web development.
 
-## Introduction
-Global Hope Consortium is a multi-service entity specializing in Software Development/Engineering, Bookkeeping and Tax, Transport/Airport Transfer, and Electronics resell. This project aims to create a comprehensive website to showcase and manage these services.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technologies and Tools](#technologies-and-tools)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+- [Development Workflow](#development-workflow)
+- [Features and Roadmap](#features-and-roadmap)
+  
+## Project Overview
+The platform will have the following service categories:
+- **Software Development**: Showcase of software services and consulting.
+- **Accounting Consultancy**: Features related to bookkeeping, VAT, and tax compliance.
+- **Transport Services**: Includes long-distance trips, airport transfers, and rental options.
+- **Electronics Resell**: Buying and renting vintage and modern electronics.
+
+## Technologies and Tools
+The project uses the following stack:
+- **Frontend**: HTML5, CSS3 (SCSS), JavaScript (Vanilla)
+- **Backend**: Java (Spring Boot with Gradle)
+- **Database**: PostgreSQL
+- **Hosting**: Docker (Development), WordPress (Initial hosting but will transition as features evolve)
+- **Version Control**: Git
+- **Other Tools**: 
+  - Docker: Containerization for development environments.
+  - Gradle: Build automation tool for managing dependencies in Spring Boot.
+  - Node.js: For any JavaScript or related build processes.
 
 ## Project Structure
-The project is organized as follows:
-    global-hope-consortium/
+
+```plaintext
+Global-Hope-Consortium/
 │
-├── index.html          # Main HTML file
-├── styles.css          # Main CSS file
-├── scripts.js          # Main JavaScript file
-├── assets/             # Directory for images and other assets
-│   ├── logo.png
-│   └── ...
-├── README.md           # Project documentation
-└── .gitignore          # Git ignore file
-
-
-
-## Technologies Used
-- **HTML5**: For structuring the content.
-- **CSS3**: For styling the website.
-- **JavaScript**: For adding interactivity.
-- **FontAwesome**: For social media icons.
-
-## Setup Instructions
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/yourusername/global-hope-consortium.git
-    cd global-hope-consortium
-    ```
-
-2. **Open the project**:
-    Open `index.html` in your preferred web browser to view the website.
-
-3. **Optional**: If you are using a local server, you can start it to serve the files.
-
-## Features
-- **Software Development Consultancy**: Information about web development, app development, and other software solutions.
-- **Accounting Consultancy**: Details about bookkeeping, financial accounting, and tax administration services.
-- **Transport Services**: Information about long-distance trips, airport transfers, and available vehicles.
-- **Electronics Resell**: A mini e-commerce section for vintage keyboards, Playstations, Apple and Android products, computers, and laptops.
-- **Contact Information**: Office address, email, WhatsApp link, and social media links.
-- **Smooth Scrolling**: Smooth scrolling for navigation links.
-
-## Contact Information
-- **Office**: 124 Van Beek Street, New Doornfontein, Johannesburg
-- **Email**: [admin@ghcons.com](mailto:admin@ghcons.com)
-- **WhatsApp**: [+27 73 368 5971](https://wa.me/27733685971)
-- **CEO**: Immaculate Nyoni
-
-Follow us on:
-- [LinkedIn](https://www.linkedin.com)
-- [Facebook](https://www.facebook.com)
-- [Instagram](https://www.instagram.com)
-- [Twitter](https://www.twitter.com)
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   ├── resources/
+│   │   │   ├── ...
+│   ├── build.gradle
+│   ├── settings.gradle
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   │   ├── images/
+│   │   └── styles/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   ├── package.json
+│   └── Dockerfile
+│
+├── database/
+│   ├── init.sql
+│   └── Dockerfile
+│
+├── README.md
+└── docker-compose.yml
