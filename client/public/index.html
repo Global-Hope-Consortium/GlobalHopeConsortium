@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Hope Consortium</title>
+    <link rel="stylesheet" href="/client/src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script defer src="/client/src/scripts/script.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="logo">Global Hope Consortium</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Button for Mobile -->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with SVG -->
+    <header class="header">
+        <div class="hero">
+            <h1 class="heading">Welcome to Global Hope Consortium</h1>
+            <button class="cta-button">Explore More</button>
+        </div>
+    </header>
+
+    <!-- The demo for loading images dynamically from JavaScript -->
+    <div id="demo"></div>
+
+    <!-- Pagination and Controls -->
+    <div class="pagination" id="pagination">
+        <div class="arrow arrow-left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </div>
+        <div class="arrow arrow-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </div>
+        <div class="progress-sub-container">
+            <div class="progress-sub-background">
+                <div class="progress-sub-foreground"></div>
+            </div>
+        </div>
+        <div class="slide-numbers" id="slide-numbers"></div>
+    </div>
+
+    <div class="cover"></div>
+</body>
+</html>
