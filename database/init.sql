@@ -6,7 +6,7 @@ BEGIN
       SELECT FROM pg_catalog.pg_roles
       WHERE rolname = 'Immaculate') THEN
 
-      CREATE ROLE Immaculate WITH LOGIN PASSWORD 'Website24#';
+      CREATE ROLE "Immaculate" WITH LOGIN PASSWORD 'Website24#';
    END IF;
 END
 $$;
@@ -17,15 +17,15 @@ $$
 BEGIN
    IF NOT EXISTS (
       SELECT FROM pg_database
-      WHERE datname = 'global_hope') THEN
+      WHERE datname = 'ghc_db') THEN
 
-      CREATE DATABASE global_hope;
+      CREATE DATABASE ghc_db;
    END IF;
 END
 $$;
 
 -- Grant privileges
-GRANT ALL PRIVILEGES ON DATABASE global_hope TO Immaculate;
+GRANT ALL PRIVILEGES ON DATABASE ghc_db TO "Immaculate";
 
 -- Create tables for your application
 CREATE TABLE IF NOT EXISTS users (
