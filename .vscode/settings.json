@@ -3,5 +3,6 @@
     "cSpell.words": [
         "globalhopeconsortium",
         "Servlet"
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }
